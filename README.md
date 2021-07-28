@@ -33,7 +33,8 @@ There were a few hold-ups carrying out this project such as designing the front-
 development went quite well and the development of separate services helped manage the content from the API's.
 
 To improve this, I would have used ReactJS or VueJS as the front-end framework to develop a PWA which would have worked 
-faster for the end user. However, using the Symfony 
+faster for the end user. However, using the Symfony HTTP Client does get the data direct from the API asynchronously and 
+does provide fast way of implementing the data.
 
 ### Development Time Needed
 To complete this project by adding a new joke to the API would take an extra 15 minutes, and the same for submitting it 
