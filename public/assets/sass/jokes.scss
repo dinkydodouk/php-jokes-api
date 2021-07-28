@@ -1,0 +1,15 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body {}
+
+.nav {
+
+  &__green {
+    background-color: $success;
+    color: white;
+
+    a {
+      color: white;
+    }
+  }
+}

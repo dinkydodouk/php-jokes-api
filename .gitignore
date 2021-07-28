@@ -8,3 +8,18 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+
+###> other files to ignore ###
+/.idea
+/public/assets/node_modules/
+###< other files to ignore ###
+
+###> symfony/phpunit-bridge ###
+.phpunit.result.cache
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+###< phpunit/phpunit ###

@@ -1,0 +1,26 @@
+{
+  "name": "jokesapi",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "file-loader": "^6.2.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.1",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.8",
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "build": "gulp default",
+    "build:css": "gulp css",
+    "build:js" : "gulp js"
+  }
+}

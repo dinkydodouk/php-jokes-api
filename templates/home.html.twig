@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>PHP Joke API Project</title>
+        <meta name="description" content="">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="canonical" href="{{ url('homepage') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/style.min.css') }}">
+    </head>
+    <body class="bg-light">
+        <nav class="navbar nav__green">
+            <div class="container">
+                <a class="navbar-brand">PHP Joke API Project</a>
+                <div class="d-flex">
+                    <button class="btn btn-light rounded-0" type="button" data-bs-toggle="modal" data-bs-target="#addAJokeModal">Add A Joke!</button>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row my-5">
+                <div id="jokes" class="col-md-8 order-1 order-md-0"></div>
+                <div class="col-md-4 order-0 order-md-1 mb-4 mb-md-0">
+                    <div class="bg-white shadow-sm p-5">
+                        <h2 class="mt-0 mb-5">Number of Jokes</h2>
+                        <hr>
+                        <div class="mt-5">
+                            <p class="mb-4">Use the slider below to generate as many jokes as you like (maximum of 20), or click the "Generate" button to load more.</p>
+                            <input type="range" min="1" max="20" value="1" step="1" id="numberOfJokes" list="stepOfJokes" class="w-100">
+                            <datalist id="stepOfJokes" class="w-100">
+                                {% for i in 1..20 %}
+                                    <option class="" label="{{ i }}">{{ i }}</option>
+                                {% endfor %}
+                            </datalist>
+                            <p class="text-end mt-5">
+                                <button type="button" id="generateJokes" class="btn btn-success rounded-0">Generate More Jokes</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="addAJokeModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addAJokeModalLabel">Add A joke</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Enter Form Code
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success rounded-0">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+        <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('assets/js/scripts.min.js') }}"></script>
+    </body>
+</html>
