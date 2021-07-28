@@ -9,6 +9,8 @@ project was to create a PHP Back-End System that pulled in Jokes from 3 separate
 * In the root directory run `composer install --dev` to install all the vendor libraries to run the application.
 * For changes in CSS and JS, navigate to `public/assets` and run `npm install` to install all node modules to assist in 
   the compiling of the SASS and JS files for production purposes.
+* To compile the CSS and JS files run `npm run build` to compile both SCSS and JS, or `npm run build:css` to compile just 
+  SCSS to CSS, or `npm run build:js` to compile the Dev JS to a minified production build.
 * In the root directory, run `symfony start:server` to run the application locally. For more information on Symfony 
   Server please visit https://symfony.com/doc/current/setup/symfony_server.html.
 
